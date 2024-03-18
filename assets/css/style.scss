@@ -1,0 +1,140 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+a{
+    text-decoration: none;
+    color: #dadada;
+}
+body{
+    background: linear-gradient(#101010 20%,#03224e );
+    height: 100vh;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 95;
+    background-color: #101010;
+    position: fixed;
+    box-shadow:0 5px 25px #03224e ;
+    height: 14%;
+    width: 100%;
+
+    .logo{
+        font-size: 33px;
+        margin-left: 10%;
+        span{
+            font-weight: 900;
+        }
+        
+    }
+    .social_media{
+        display: flex;
+         li{
+            padding: 14px;
+            background: none;
+         }
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10%;
+
+        li{
+            list-style: none;
+
+            a{
+                padding: 10px 15px;
+                border-radius: 4px;
+                transform: 1s;
+                font-weight: 700;
+                font-size: larger;
+
+                &:hover{
+                    background-color: #dadada;
+                    color: black;
+                    transition: 2s;
+                    box-shadow: 0 5px 25px #dadada;
+                }
+            }
+
+        }
+    }
+}
+
+
+.main{
+    height: 100vh;
+    width: 100%;
+
+    .card{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+
+
+        .img-author {
+            img{
+                color: #dadada;
+                border: solid;
+                border-radius: 34px;
+                margin-top: 25%;
+                transform: translateX(30%);
+            }
+        }
+
+        .container{
+           // background: #034e1d;
+            padding: 30px;
+            width: 44%;
+            margin-left: 15%;
+            transform: translateY(50px);
+
+            h2{
+                color: #dadada;
+                font-size: xx-large;
+                padding-bottom: 20px;
+            }
+
+            p{
+                font-size: larger;
+                font-weight: 500;
+                letter-spacing: 1px;
+                word-spacing: 2px;
+                flex-direction: row;
+                color: #dadada;
+                line-height: 30px;
+                
+            }
+        }
+
+    }
+
+}
+
+
+footer{
+    height: 30%;
+
+    .copy-right{
+        display: flex;
+        justify-content: center;
+        transform: translateY(150px);
+        i{
+            color: #dadada;
+            display: flex;  
+            h3{
+                color: #dadada;
+            } 
+        }
+    }
+}
